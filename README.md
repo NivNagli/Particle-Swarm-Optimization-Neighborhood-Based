@@ -2,6 +2,8 @@
 Hybrid implementation with c ++ and python
 ![swarm1](https://user-images.githubusercontent.com/75484097/109506006-d82dba00-7aa5-11eb-8878-b044e688297e.jpg)
 
+written by Niv Nagli free code to use and I will be happy to help anyone who wants: itsniv@gmail.com 
+
 
 GIF from my program:
 
@@ -52,7 +54,7 @@ The implementation I chose for my program is a hybrid that combines the use of c
 All calculations for the particle location will take place in the c++ executable file, and the central program management and visualization will take place in python.
 
 the c++ executable files works with input files that must meet the standards of the program:
-
+------
 1)  init.txt || init2.txt:
 
 The boot file will be either init.txt or init2.txt depending on what stage of visualization we are in,
@@ -64,6 +66,27 @@ The number of particles should appear in the first row of files, followed by the
 2) target.csv:
 
 target.csv will contain the location of our target in the 2d surface, that will be obtained using the python program or through manual entry.
+
+----------------------
+The program in c++ was written using the term "Drone" instead of a "Particle" and our search surface was called "Forest" because I originally got the task as a home exercise that partially implement the current implementation ...
+
+I invested a lot of time in documenting the code in c ++ so if anyone is interested in delving deeper I recommend him read the documentation in the code.
+-------
+----------------------
+
+python files:
+------------
+1) Draggable_Target.py
+
+
+
+
+
+
+2) main.py
+
+
+
 
 
 
