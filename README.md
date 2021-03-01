@@ -76,14 +76,14 @@ I invested a lot of time in documenting the code in c ++ so if anyone is interes
 
 python files:
 ------------
-1) Draggable_Target.py
+1) Draggable_Target.py :
+This script will be responsible for determining the target location for the particles
 
 
 
 
 
-
-2) main.py
+2) main.py :
 
 
 
