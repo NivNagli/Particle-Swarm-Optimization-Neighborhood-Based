@@ -46,13 +46,16 @@ Quote: https://en.wikipedia.org/wiki/Particle_swarm_optimization
 
 In fact what we see in the first line is the calculation of the next velocity of the particle and in the second line what appears is the formula for updating the position.
 
+![swarmf2](https://user-images.githubusercontent.com/75484097/109508261-58551f00-7aa8-11eb-8f55-0dc2c13458cf.png)
+
+
 
 
 
 # My design :
 
-The implementation I chose for my program is a hybrid that combines the use of c++ and python code languages,
-All calculations for the particle location will take place in the c++ executable file, and the central program management and visualization will take place in python.
+The implementation I chose for my program is a hybrid design that combines the use of c++ and python code languages,
+All calculations for the particles locations will take place in the c++ executable file, and the central program management and visualization will take place in python.
 
 the c++ executable files works with input files that must meet the standards of the program:
 ------
@@ -64,12 +67,35 @@ so we will only use init.txt in the first run of the visualization,
 and will use init2 in all other runs thus ensuring that init.txt will not change at any stage of the program.
 The number of particles should appear in the first row of files, followed by the coordinates of their initial location and initial velocity.
 
+Example for init files:
+
+[init.txt](https://github.com/NivNagli/Particle-Swarm-Optimization-Neighborhood-Based/files/6064250/init.txt)
+
+[init2.txt](https://github.com/NivNagli/Particle-Swarm-Optimization-Neighborhood-Based/files/6064252/init2.txt)
+
+
+
 2) target.csv:
 
-target.csv will contain the location of our target in the 2d surface, that will be obtained using the python program or through manual entry.
+target.csv will contain the location of our target in the 2d surface, that will be obtained using the python program "Draggable_Target.py" or through manual entry.
+
+
+
+
 
 ----------------------
-The program in c++ was written using the term "Drone" instead of a "Particle" and our search surface was called "Forest" because I originally got the task as a home exercise that partially implement the current implementation ...
+
+The executable file created by our c ++ program is the implementation of the PSO algorithm under "Neighbors Standard":
+
+ 
+ * " This topology allows all particles to communicate with all the other particles,
+ * thus the whole swarm share the same best position "g" from a single particle. However,
+ * this approach might lead the swarm to be trapped into a local minimum. "
+ * Quoted: "https://en.wikipedia.org/wiki/Particle_swarm_optimization"
+ 
+
+clarification:
+The c++ program was written using the term "Drone" instead of a "Particle" and our search surface was called "Forest" because I originally got the task as a home exercise that partially implement the current implementation ...
 
 I invested a lot of time in documenting the code in the c++ files so if anyone is interested in delving deeper I recommend him read the documentation in the code.
 -------
