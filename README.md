@@ -104,9 +104,12 @@ I invested a lot of time in documenting the code in the c++ files so if anyone i
 python files:
 ------------
 1) Draggable_Target.py :
-This script will be responsible for determining the target location for the particles
+
+This script will be responsible for determining the target location for the particles,
+The purpose of this script is to run in parallel with the main script and actually create a type of controller that the user can use to move the target for our swarm.
 
 
+in a brief description the program will use the matplotlib library and create an external container of our search surface where the user can stick a target on the space and its location will be written to an external output file that the algorithm I wrote in the c++ language can receive and work with.
 
 
 
