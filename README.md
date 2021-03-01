@@ -79,7 +79,13 @@ Example for init files:
 
 target.csv will contain the location of our target in the 2d surface, that will be obtained using the python program "Draggable_Target.py" or through manual entry.
 
+# output files in case of valid inputs:
 
+1) "moves.txt" : a file that will contain all the particle moves for 60 iterations of time as an input file for the python script
+
+
+2) "iterations.txt": a file that will contain a genral control data for the Python script, 
+the file will contain information about the number of iterations that the algorithm performed and the last locations of all the particles.
 
 
 
@@ -101,7 +107,7 @@ I invested a lot of time in documenting the code in the c++ files so if anyone i
 -------
 ----------------------
 
-python files:
+# python files:
 ------------
 1) Draggable_Target.py :
 
@@ -114,7 +120,48 @@ in a brief description the program will use the matplotlib library and create an
 
 
 2) main.py :
-This script is the operator of all our programs, he will determine which method will work and when and at the same time he will check end cases and close the program if necessary 
+This script is the operator of all our programs, he will determine which method will work and when and at the same time he will check end cases and close the program if necessary.
+
+The script will work with all the files I mentioned earlier,
+I tried to document in a minimal and understandable way the structure of the script within the code itself and here I will describe it briefly.
+
+
+at the start of the run the script will run the Draggable_Target.py script in another process\thread,
+and then it will create the main object that manages all our processes named "Drones_Visualization" which will be responsible for all the processes that need to be performed and will try to handle end cases.
+
+
+
+# Examples for the program:
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/75484097/109566428-878d7f80-7aec-11eb-955e-e8b7af2d28a8.gif)
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/75484097/109567142-8c066800-7aed-11eb-878c-1b226eb454f8.gif)
+
+
+
+
+
+
+Because the natural behavior of particles is to move to extremes, care must be taken not to lead the swarm to extremes because it can sometimes get stuck there.
+
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/75484097/109567035-62e5d780-7aed-11eb-9f35-4f6526e34c37.gif)
+
+
+
+# Final words
+
+
+
+Thats it! thank you if you have read this far this is my first mini project, with his preparation I exposed to the metaheuristics algorithms and to the optimization problems they are trying to solve, i hope that i will make another on in the near futare...
+
+Important to say!
+The files I upload are free to use and were written on the macbook air with the m1 processor. In order to use the code on Windows, all the Python files must be delete the lines that contain "matplotlib.use('TKAgg')" Also!!
+
+You need to re-compile the c ++ files twice once the input file is init.txt and the second time with the init2.txt file under the names "PSO_ALG_LOCKING",
+"PSO_ALG_LOCKING2"
+
+And for those who are looking for an algorithm for this version of the PSO Algorithm I would be more than happy if you use my algorithm and if you find any way to improve it I would love to get an update on that,
+Thanks.
+
 
 
 
