@@ -71,7 +71,7 @@ target.csv will contain the location of our target in the 2d surface, that will 
 ----------------------
 The program in c++ was written using the term "Drone" instead of a "Particle" and our search surface was called "Forest" because I originally got the task as a home exercise that partially implement the current implementation ...
 
-I invested a lot of time in documenting the code in c ++ so if anyone is interested in delving deeper I recommend him read the documentation in the code.
+I invested a lot of time in documenting the code in the c++ files so if anyone is interested in delving deeper I recommend him read the documentation in the code.
 -------
 ----------------------
 
@@ -85,6 +85,7 @@ This script will be responsible for determining the target location for the part
 
 
 2) main.py :
+This script is the operator of all our programs, he will determine which method will work and when and at the same time he will check end cases and close the program if necessary 
 
 
 
