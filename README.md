@@ -166,6 +166,10 @@ You need to re-compile the c ++ files twice once the input file is init.txt and 
 "PSO_ALG_LOCKING2"
 
 # for mac environment :
+
+i made a Mac_Run_Pack.zip that contain all the files that you need to run the program on your mac i compile the files on the macbook air with the m1 chip so I'm not one hundred percent sure the version will fit everyone
+
+
 compilation commands for the c++ files
 first with init.txt at main.cpp as the boot input:
 1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
