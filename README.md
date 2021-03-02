@@ -165,7 +165,7 @@ The files I upload are free to use and were written on the macbook air with the 
 You need to re-compile the c ++ files twice once the input file is init.txt and the second time with the init2.txt file under the names "PSO_ALG_LOCKING",
 "PSO_ALG_LOCKING2"
 
-for mac environment :
+# for mac environment :
 compilation commands for the c++ files
 first with init.txt at main.cpp as the boot input:
 1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
@@ -178,7 +178,7 @@ now go to the main.cpp and change the boot file to init2.txt and compile with th
 after you did that put the exe files in the python files folders...
 
 
-for windows environment :
+# for windows environment :
 compilation commands for c++ files
 first with init.txt at main.cpp as the boot input:
 1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
