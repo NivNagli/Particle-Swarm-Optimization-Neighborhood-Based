@@ -75,6 +75,7 @@ Example for init files:
 
 
 
+
 2) target.csv:
 
 target.csv will contain the location of our target in the 2d surface, that will be obtained using the python program "Draggable_Target.py" or through manual entry.
@@ -150,17 +151,48 @@ Because the natural behavior of particles is to move to extremes, care must be t
 # Final words
 
 
+Thats it! thank you if you have read this far this is my first mini project, with his preparation I exposed to the metaheuristics algorithms and to the optimization problems they are trying to solve, i hope that i will make another one in the near futare...
 
-Thats it! thank you if you have read this far this is my first mini project, with his preparation I exposed to the metaheuristics algorithms and to the optimization problems they are trying to solve, i hope that i will make another on in the near futare...
 
-Important to say!
+And for those who are looking for an algorithm for this version of the PSO Algorithm I would be more than happy if you use my algorithm and if you find any way to improve it I would love to get an update on that,
+Thanks.
+
+-----------
+
+# Important to say!
 The files I upload are free to use and were written on the macbook air with the m1 processor. In order to use the code on Windows, all the Python files must be delete the lines that contain "matplotlib.use('TKAgg')" Also!!
 
 You need to re-compile the c ++ files twice once the input file is init.txt and the second time with the init2.txt file under the names "PSO_ALG_LOCKING",
 "PSO_ALG_LOCKING2"
 
-And for those who are looking for an algorithm for this version of the PSO Algorithm I would be more than happy if you use my algorithm and if you find any way to improve it I would love to get an update on that,
-Thanks.
+for mac environment :
+compilation commands for the c++ files
+first with init.txt at main.cpp as the boot input:
+1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
+2) g++ -o PSO_ALG_LOCKING -Wall Vec2D.o Square.o Drone.o Forest.o main.o
+
+now go to the main.cpp and change the boot file to init2.txt and compile with this lines:
+1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
+2) g++ -o PSO_ALG_LOCKING2 -Wall Vec2D.o Square.o Drone.o Forest.o main.o
+
+after you did that put the exe files in the python files folders...
+
+
+for windows environment :
+compilation commands for c++ files
+first with init.txt at main.cpp as the boot input:
+1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
+2) g++ -o PSO_ALG_LOCKING.exe -Wall Vec2D.o Square.o Drone.o Forest.o main.o
+
+now go to the main.cpp and change the boot file to init2.txt and compile with this lines:
+1) g++ -c -Wall Vec2D.cpp Square.cpp Drone.cpp Forest.cpp main.cpp
+2) g++ -o PSO_ALG_LOCKING2.exe -Wall Vec2D.o Square.o Drone.o Forest.o main.o
+
+after you did that put the exe files in the python files folders and go to the python script and update the algorithm files that will have the .exe extension 
+
+
+
+
 
 
 
