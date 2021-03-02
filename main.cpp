@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 
     /*------------------------------------------ Tests for file existence: ------------------------------------------*/
 
-    ifstream f1("init2.txt");
+    ifstream f1("init.txt");
     ofstream  f2("moves.txt"), f3("iterations.txt");
 
     if(!f1 || !f2 || !f3){
