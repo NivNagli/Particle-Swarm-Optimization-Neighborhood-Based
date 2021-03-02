@@ -121,6 +121,7 @@ in a brief description the program will use the matplotlib library and create an
 
 
 2) main.py :
+
 This script is the operator of all our programs, he will determine which method will work and when and at the same time he will check end cases and close the program if necessary.
 
 The script will work with all the files I mentioned earlier,
