@@ -1,6 +1,6 @@
 """
 Author: Niv Nagli
-Project: Drone_Rescue
+Project: Drone_Rescue, PSO_ALG
 File: Draggable_Target.py
 Contact Information: itsniv@gmail.com
 Sources I used:
