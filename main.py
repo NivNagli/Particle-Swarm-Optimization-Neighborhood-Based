@@ -1,7 +1,7 @@
 """
 Author: Niv Nagli
 Project: Particle Swarm Optimization
-File: Draggable_Target.py
+File: main.py
 Contact Information: itsniv@gmail.com
 
 Sources I used:
