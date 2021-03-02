@@ -37,13 +37,13 @@ class Draggable_Target:
         self.ID = ID
 
     def connect(self):
-        # 'connect to all the events we need'
+        # connect the event listeners
         self.in_release = self.point.figure.canvas.mpl_connect('button_release_event', self.on_release)
         self.in_motion = self.point.figure.canvas.mpl_connect('motion_notify_event', self.on_motion)
         self.in_press = self.point.figure.canvas.mpl_connect('button_press_event', self.on_press)
 
     def on_release(self, event):
-        # 'on release we reset the press data'
+        # on release will reset the data
         if Draggable_Target.lock is not self:
             return
 
@@ -64,6 +64,7 @@ class Draggable_Target:
         file = open("target.csv", 'w')
         x = self.point.center[0]
         y = self.point.center[1]
+        # Borders check:
         if x < -500 or x > 500:
             if x < 0:
                 x = -500
@@ -74,7 +75,7 @@ class Draggable_Target:
                 x = -500
             else:
                 y = 500
-        file.write(str(x) + ',' + str(y))
+        file.write(str(x) + ',' + str(y)) # update the new Target
 
         canvas = self.point.figure.canvas
         axes = self.point.axes
