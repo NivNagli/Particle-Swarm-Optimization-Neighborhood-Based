@@ -1,4 +1,4 @@
-### Particle-Swarm-Optimization-Neighborhood-Based
+# Particle-Swarm-Optimization-Neighborhood-Based
 Hybrid implementation with c ++ and python
 
 ![swarm1](https://user-images.githubusercontent.com/75484097/109506006-d82dba00-7aa5-11eb-8878-b044e688297e.jpg)
