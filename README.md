@@ -42,6 +42,7 @@ Quote: https://en.wikipedia.org/wiki/Particle_swarm_optimization
      *
      * w = "Inertia Weight": " The role of the inertia weight  is considered very important in 
        PSO convergence behavior.
+
      * the inertia weight is applied to control the impact of the previous history 
        of velocities on the current velocity. "
      * Quoted: "https://www.researchgate.net/publication/275066387_Novel_Particle_Swarm_Optimization_and_Its_Application_in_Calibrating_the_Underwater_Transponder_Coordinates"
